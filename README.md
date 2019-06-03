@@ -1,2 +1,1 @@
-# git-github
-this is file when i was learning from edureka 
+Hey guys it is a repo for my friends to learn c and c++ and even more 
