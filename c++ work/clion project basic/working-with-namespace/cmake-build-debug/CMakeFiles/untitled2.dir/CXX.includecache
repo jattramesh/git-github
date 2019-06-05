@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Rahul/CLionProjects/untitled2/main.cpp
+iostream
+-
+tool1-nspace.h
+C:/Users/Rahul/CLionProjects/untitled2/tool1-nspace.h
+tool2-nspace.h
+C:/Users/Rahul/CLionProjects/untitled2/tool2-nspace.h
+iostream
+-
+
+C:/Users/Rahul/CLionProjects/untitled2/tool1-nspace.h
+
+C:/Users/Rahul/CLionProjects/untitled2/tool2-nspace.h
+
