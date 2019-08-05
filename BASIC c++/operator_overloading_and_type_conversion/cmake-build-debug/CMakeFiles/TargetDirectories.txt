@@ -1,3 +1,0 @@
-/home/rahul/CLionProject/operator_overloading_and_type_conversion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rahul/CLionProject/operator_overloading_and_type_conversion/cmake-build-debug/CMakeFiles/operator_overloading_and_type_conversion.dir
-/home/rahul/CLionProject/operator_overloading_and_type_conversion/cmake-build-debug/CMakeFiles/edit_cache.dir

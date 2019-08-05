@@ -1,3 +1,0 @@
-/home/rahul/CLionProject/Constructors_and_destructures/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rahul/CLionProject/Constructors_and_destructures/cmake-build-debug/CMakeFiles/Constructors_and_destructures.dir
-/home/rahul/CLionProject/Constructors_and_destructures/cmake-build-debug/CMakeFiles/edit_cache.dir

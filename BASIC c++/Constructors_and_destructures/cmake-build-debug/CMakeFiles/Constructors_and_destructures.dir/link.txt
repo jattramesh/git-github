@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Constructors_and_destructures.dir/destructor.cpp.o  -o Constructors_and_destructures 

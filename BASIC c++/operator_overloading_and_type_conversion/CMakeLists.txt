@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.14)
-project(operator_overloading_and_type_conversion)
-
-set(CMAKE_CXX_STANDARD 14)
-
-add_executable(operator_overloading_and_type_conversion mathematical_operation_on_string.cpp type_conversion.cpp)
