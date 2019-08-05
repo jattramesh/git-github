@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/dynamic_memory_allocation_and_linked_list.dir/linked_list_operation_add_search_deleate.c.o  -o dynamic_memory_allocation_and_linked_list 

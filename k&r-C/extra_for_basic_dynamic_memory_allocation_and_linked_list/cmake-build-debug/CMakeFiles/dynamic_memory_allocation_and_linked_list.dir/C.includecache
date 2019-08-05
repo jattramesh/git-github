@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rahul/CLionProjects/dynamic_memory_allocation_and_linked_list/linked_list_operation_add_search_deleate.c
+stdlib.h
+-
+stdio.h
+-
+
