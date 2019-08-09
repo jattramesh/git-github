@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.14)
-project(dynamic_memory_allocation_and_linked_list C)
-
-set(CMAKE_C_STANDARD 11)
-
-add_executable(dynamic_memory_allocation_and_linked_list linked_list_operation_add_search_deleate.c)
