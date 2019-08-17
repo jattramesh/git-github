@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/templetes.dir/overloading_template_function.cpp.o CMakeFiles/templetes.dir/Member_function_template_for_vector.cpp.o CMakeFiles/templetes.dir/NON_type_template_argument.cpp.o  -o templetes 
