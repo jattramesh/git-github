@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   "CMakeFiles/Examination_Management_Package.dir/student_main().cpp.o"  -o Examination_Management_Package 
