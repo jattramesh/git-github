@@ -1,3 +1,0 @@
-/home/rahul/CLionProject/Quene/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rahul/CLionProject/Quene/cmake-build-debug/CMakeFiles/Quene.dir
-/home/rahul/CLionProject/Quene/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -9,8 +9,8 @@ struct list{
 };
 typedef struct list node;
 struct q{
-    node *front;
-    node *rear;
+    struct list *front;
+    struct list  *rear;
 };
 typedef struct q quene;
 quene *p;
@@ -113,7 +113,7 @@ quene *delete_element(quene *q)
         printf("\n the value being deleted is : %d",ptr->data);
         free(ptr);
     }
-    return p;
+    return q;
 }
 int peek(quene *q)
 {
