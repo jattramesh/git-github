@@ -20,3 +20,10 @@ void insertA(int val)
     }
 
 }
+
+
+
+/*
+sorry i am uploding soon 
+*/
+
