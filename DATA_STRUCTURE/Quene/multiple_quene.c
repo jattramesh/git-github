@@ -19,11 +19,3 @@ void insertA(int val)
             quene[++rearA]=val;
     }
 
-}
-
-
-
-/*
-sorry i am uploding soon 
-*/
-
