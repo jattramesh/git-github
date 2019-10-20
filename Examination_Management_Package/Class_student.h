@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <cstring>
 #include <iostream>
-char string[30];
+#include <fstream>
 int regdstore[100];
 char school_name[100];
 using namespace std;
@@ -60,10 +60,12 @@ char *getstream()
 };
 void Student_Detail::Get_Detail()
 {
+    ofstream input("raw_input");
     static  int i=0;
     cout<<"Enter Registration Number :";
     cin>>::getregdno;
     Regdno=::getregdno;
+    input<<
     cout<<"Enter Student Name :";
     cin.getline(name,30);
     cin.getline(name,30);
@@ -103,7 +105,8 @@ public:
     float calculate_percent();
     void file_management();
     void display_result();
-    void individual_result(int );
+    void individual_result();
+    void all_result();
     void addresult()
     {
         Get_Detail();
@@ -111,6 +114,7 @@ public:
     }
 
 };
+}
 float Result::calculate_percent() {
         int regd;
 
@@ -129,19 +133,48 @@ float Result::calculate_percent() {
         result=(sub1+sub2+sub3+sub4+sub5)/5;
         return result;
     }
-    void Result::individual_result(int regd) {
-
+    void Result::individual_result() {
+    int status;
+    cout<<"Do you want to reamove the previous history of individual student result display \n";
+    string option;
+    cin>>option;
+    if(option=="yes")
+    {
+        status=remove("individual.txt");
+        if(status==0)
+            cout<<"succesfully deleted sir\n";
+        else
+        {
+            cout<<"Removing Error , either file donot exit or wrong file name\n";
+        }
+    }
+    else
+    {
+        cout<<"okk, Now the result will be catenate in file\n";
+    }
+    ofstream file;
+    file.open("individual.txt",ios::out|ios::app);
             cout<<school_name<<" PUBLIC SCHOOL"<<"\t\t\t\n";
+            file<<"\n"<<school_name<<" PUBLIC SCHOOL";
             cout<<"Admno"<<":"<<getregd();
+        file<<"\nAdmno"<<":"<<getregd()<<"\n";
             cout<<"\n";
             cout<<"Stream"<<":"<<getstream();
+        file<<"Stream"<<":"<<getstream();
             cout<<"\n-------------------------------------------------------------------\n";
+            file<<"\n-------------------------------------------------------------------\n";
             cout<<"\nSubject  "<<"\t\t\t"<<"MAX. MARKS "<<"\t\t\t"<<"MARKS OBTAINED\n"<<endl;
+            file<<"\nSubject  "<<"\t\t\t"<<"MAX. MARKS "<<"\t\t\t"<<"MARKS OBTAINED\n"<<endl;
             cout<<"English  "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub1;
+            file<<"English  "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub1;
             cout<<"\nMaths    "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub2;
+            file<<"\nMaths    "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub2;
             cout<<"\nChemistry"<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub3;
+            file<<"\nChemistry"<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub3;
             cout<<"\nPhysics  "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub4;
+            file<<"\nPhysics  "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub4;
             cout<<"\nComputer "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub5;
+            file<<"\nComputer "<<"\t\t\t"<<"100        "<<"\t\t\t"<<sub5;
 
         }
 #endif //EXAMINATION_MANAGEMENT_PACKAGE_CLASS_STUDENT_H
