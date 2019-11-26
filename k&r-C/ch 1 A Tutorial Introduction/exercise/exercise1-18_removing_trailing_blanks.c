@@ -12,7 +12,7 @@ int main()
             printf("%s",line);
         return 0;
 }
-int getilne(char s[],int lim)
+int getline(char s[],int lim)
 {
     int i;
     int c;
@@ -22,7 +22,7 @@ int getilne(char s[],int lim)
         s[i] = c;
         ++i;
     }
-    return i;
+    return iif;
 }
 int remove(char s[])
 {

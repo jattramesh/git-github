@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Searching_and_Sorting.dir/jump_search.c.o  -o Searching_and_Sorting 

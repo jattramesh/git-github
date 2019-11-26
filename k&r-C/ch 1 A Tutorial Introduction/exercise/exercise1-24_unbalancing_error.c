@@ -1,77 +1,76 @@
-//
-// Created by Rahul on 6/21/2019.
-//
+
 #include <stdio.h>
 int brace,brack,paren;
 void in_quote(int c);
 void in_comment(void);
 void search(int c);
-/*rudimentry syntax error for c programme*/
-main()
+int main()
 {
     int c;
     extern int breces,brack,paren;
     while((c=getchar())!=EOF)
     {
-        if(c=='/') {
-            if ((c = getchar()) == '*')
-                in_comment();
+        if(c=='/')
+        {
+            if((c=getchar())=='*')
+                    in_comment();
             else
-                search();
+                search(c);
         }
-        else if(c=='\'' || c=='"')
+        else if(c=='\'' || c=='"' )
             in_quote(c);
         else
             search(c);
-        if(brace<0)
-        {
-            printf("unbalance braces\n");
-            brace=0;
-        }
-        else if(brack<0) {
-            printf("unbalance brackets\n");
-            brack = 0;
-        }
-            else if(paren<0){
-                printf("unbalance parenthesis\n");
-                paren=0;
-            }
-            if(brace>0)
-            printf("unbalance braces\n");
-            if(brack>0)
-                printf("unbalance bracket\n");
-            if(paren>0)
-                printf("unbalance paraenthesis\n");
     }
-
+    if(brace<0)
+    {
+        printf("unbalance braces \n");
+        brace=0;
+    }
+    else if(brack<0)
+    {
+        printf("unbalance bracket\n");
+        brack=0;
+    }
+    else if(paren<0)
+    {
+        printf("unbalance parenthesis\n");
+        paren=0;
+    }
+    if(brace>0)
+        printf("unbalanace braces\n");
+    if(brack>0)
+        printf("unbalanace brackets\n");
+    if(paren>0)
+        printf("unbalanace parenthesis\n");
 }
-/*search for rudimentry syntax error*/
 void search(int c)
 {
     extern int brace,brack,paren;
     if(c=='{')
         ++brace;
-    else if(c=='}')
+    if(c=='}')
         --brace;
-    else if(c=='[')
+    if(c=='[')
         ++brack;
-    else if(c==']')
-        --brack;
-    else if(c=='(')
+    if(c==']')
+        --brace;
+    if(c=='(')
         ++paren;
-    else if(c==')')
+    if(c==')')
         --paren;
 }
 void in_comment(void)
 {
-    int c,d;
-    c=getchar(); //prev character
-    d=getchar();
-    while(c!='*'||d!='/')
-    {
-        c=d;
-        d=getchar();
-    }
+ int c,d;
+ c=getchar();
+ d=getchar();
+ while(c!='*' || c!='/')
+ {
+     c=d;
+     d=getchar();
+ }
+
 }
 void in_quote(int c)
 {
@@ -80,3 +79,4 @@ void in_quote(int c)
         if(d=='\\')
             getchar();
 }
+
