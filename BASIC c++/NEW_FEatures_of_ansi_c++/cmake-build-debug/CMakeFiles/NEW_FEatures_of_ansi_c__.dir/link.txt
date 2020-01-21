@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/NEW_FEatures_of_ansi_c__.dir/new_keyword.cpp.o  -o NEW_FEatures_of_ansi_c__ 

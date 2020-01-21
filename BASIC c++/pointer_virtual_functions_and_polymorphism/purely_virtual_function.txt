@@ -1,0 +1,8 @@
+the purely virtual function are define with now argument , these are a type of do nothing function
+decleration:
+virtual void display()=0;
+this is a pure virtual function.
+this function declalare in base class and has nop defination relative to its base class
+these function are need to be redefined in derived class.
+Remember that a class containg virtual functions cannot be usecd to make its object but used to make  a base pointer which is used for accessing all class and their members;
+Dynamic Polymorphism can be access by using pointers;

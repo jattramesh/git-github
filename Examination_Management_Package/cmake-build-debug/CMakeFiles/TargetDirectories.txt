@@ -1,0 +1,3 @@
+/home/rahul/CLionProject/Examination_Management_Package/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rahul/CLionProject/Examination_Management_Package/cmake-build-debug/CMakeFiles/Examination_Management_Package.dir
+/home/rahul/CLionProject/Examination_Management_Package/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/o_operation.dir/user_defiened_manipulators.cpp.o  -o o_operation 

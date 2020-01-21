@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rahul/CLionProject/Examination_Management_Package/Class_student.h
+stdio.h
+-
+cstring
+-
+iostream
+-
+
+/home/rahul/CLionProject/Examination_Management_Package/student_main().cpp
+Class_student.h
+/home/rahul/CLionProject/Examination_Management_Package/Class_student.h
+
